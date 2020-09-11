@@ -42,7 +42,6 @@ const BigSizeVideo = ({data, program, loading, refetch, fetchMore}) => {
                 .map((video) => video.videoId)
                 .findIndex((obj) => obj === playVideo.videoId)
             }
-            //   onReady={() => setIsLoading(false)}
             play={true}
             onChangeState={(e) => {
               if (e === 'ended') {

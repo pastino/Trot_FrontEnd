@@ -13,17 +13,10 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native-gesture-handler';
-import {
-  insertNewFavorte,
-  queryAllFavorite,
-  deleteFavorite,
-} from '../../../../databases/AllSchemas';
+import {deleteFavorite} from '../../../../databases/AllSchemas';
 import styles from '../../../../styles';
 import contents from '../../../../contents';
 import IoniconsIcons from '../../../../components/IoniconsIcons';
-import Duration from './duration/Duration';
-import {useQuery} from 'react-apollo-hooks';
-import {FAVORITE_VIDEO} from '../../../Query';
 
 const FavoriteMusic = ({navigation, favorite, setFavorite, loading}) => {
   const [palyLists, setPlayLists] = useState([]);
@@ -49,29 +42,6 @@ const FavoriteMusic = ({navigation, favorite, setFavorite, loading}) => {
 
   const [favoriteId, setFavoriteId] = useState([]);
   const [shouldFetch, setShouldFetch] = useState(false);
-
-  // const {
-  //   data: favoriteData,
-  //   loading,
-  //   refetch: favoriteRefetch,
-  //   fetchMore: favoriteFetchMore,
-  // } = useQuery(FAVORITE_VIDEO, {
-  //   variables: {
-  //     videoId: favoriteId.map((video) => video.videoId),
-  //     // pageNumber: 0,
-  //     // items: 50,
-  //   },
-  //   notifyOnNetworkStatusChange: true,
-  //   skip: shouldFetch,
-  //   fetchPolicy: 'network-only',
-  // });
-
-  // useEffect(() => {
-  //   if (shouldFetch === true) {
-  //     setFavorite(favoriteData && favoriteData.favoriteVideo);
-  //   }
-  //   setShouldFetch(false);
-  // }, [favoriteData]);
 
   const onRefresh = async () => {
     try {

@@ -54,18 +54,6 @@ const ImageView = ({navigation, imageModal, setImageModal, avatar}) => {
         </View>
       </View>
     </Modal>
-    // <View
-    //   style={{
-    //     flex: 1,
-    //     backgroundColor: 'black',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //   }}>
-    //   <Image
-    //     style={{width: contents.width, height: contents.width}}
-    //     source={{uri: avatar}}
-    //   />
-    // </View>
   );
 };
 

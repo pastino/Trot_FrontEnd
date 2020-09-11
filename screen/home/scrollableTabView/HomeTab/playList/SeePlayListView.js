@@ -83,7 +83,6 @@ const SeePlayListView = ({navigation, navigation: {goBack}}) => {
         setFavorite={setFavorite}
         data={videos}
         loading={loading}
-        //   fetchMore={}
         division={'playList'}
       />
     </View>

@@ -76,31 +76,6 @@ const IndiChatView = ({
     if (shakingIndex === index) {
       console.log(shakingIndex, index);
       setTimeout(() => {
-        // // Animation consists of a sequence of steps
-        // Animated.sequence([
-        //   // start rotation in one direction (only half the time is needed)
-        //   Animated.timing(animatedValue, {
-        //     toValue: 1.0,
-        //     duration: 0.5,
-        //     easing: Easing.linear,
-        //     useNativeDriver: true,
-        //   }),
-        //   // rotate in other direction, to minimum value (= twice the duration of above)
-        //   Animated.timing(animatedValue, {
-        //     toValue: -1.0,
-        //     duration: 0.5,
-        //     easing: Easing.linear,
-        //     useNativeDriver: true,
-        //   }),
-        //   // return to begin position
-        //   Animated.timing(animatedValue, {
-        //     toValue: 0.0,
-        //     duration: 0.5,
-        //     easing: Easing.linear,
-        //     useNativeDriver: true,
-        //   }),
-        // ]).start();
-
         Animated.timing(animatedValue, {
           toValue: 1,
           duration: 150,

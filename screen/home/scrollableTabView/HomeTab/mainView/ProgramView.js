@@ -36,10 +36,6 @@ const ProgramView = ({program, navigation}) => {
           <View
             style={{
               width: contents.width / 2.3,
-              // borderColor: styles.lightGreyColor,
-              // borderWidth: 1,
-              // borderBottomLeftRadius: 10,
-              // borderBottomRightRadius: 10,
               height: 'auto',
               justifyContent: 'center',
               alignItems: 'center',

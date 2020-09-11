@@ -284,16 +284,6 @@ const LatestVideoView = ({navigation, favorite}) => {
                       {moment(video.releaseDate).format('MM/DD')}
                     </Text>
                   </View>
-                  {/* <View
-                    style={{
-                      padding: 10,
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                    }}>
-                    <Text style={{color: styles.darkGreyColor}}>
-                      {video.duration}
-                    </Text>
-                  </View> */}
                 </View>
               </TouchableWithoutFeedback>
             </View>

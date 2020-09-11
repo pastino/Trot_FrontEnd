@@ -39,10 +39,6 @@ const RecoVideoPlayer = ({navigation}) => {
           play={true}
           onChangeState={(e) => {
             console.log(e);
-            if (e === 'ended') {
-              null;
-              // testHandle({musicNumber});
-            }
           }}
           initialPlayerParams={{
             controls: true,
@@ -51,23 +47,6 @@ const RecoVideoPlayer = ({navigation}) => {
           playbackRate={1}
         />
 
-        {/* <YouTube
-          apiKey={'AIzaSyCuRL_AkkfCk-QiTTEvfdk9OzWcM_Fixks'}
-          videoId={data.videoId}
-          autoplay={true}
-          play={true}
-          onReady={(e) => console.log(e)}
-          onChangeState={(e) => {
-            if (e.state === 'ended') {
-              null;
-              // testHandle({musicNumber});
-            }
-          }}
-          // loop={loop}
-          onChangeQuality={(e) => console.log(e)}
-          onError={(e) => console.log(e)}
-          style={{alignSelf: 'stretch', height: 300}}
-        /> */}
         <Text
           style={{
             width: contents.width,

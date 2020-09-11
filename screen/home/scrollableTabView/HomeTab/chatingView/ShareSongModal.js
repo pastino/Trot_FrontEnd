@@ -124,16 +124,6 @@ const ShareSongModal = ({
                 placeholderTextColor={styles.darkGreyColor}
                 returnKeyType={'none'}
                 blurOnSubmit={true}
-                onSubmitEditing={() => {
-                  if (value === '') {
-                    ToastAndroid.show(
-                      '검색어를 입력해주세요',
-                      ToastAndroid.SHORT,
-                    );
-                  } else {
-                    //   navigation.navigate('SearchDataView', {value});
-                  }
-                }}
                 style={{
                   width: contents.width / 2,
                   height: 43,

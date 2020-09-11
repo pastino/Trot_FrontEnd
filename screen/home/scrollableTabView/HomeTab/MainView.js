@@ -56,12 +56,6 @@ const MainView = ({
         }}
         contentContainerStyle={{flexGrow: 1}}>
         <View style={{flex: 1, backgroundColor: 'white'}}>
-          {/* <TouchableWithoutFeedback
-            onPress={() =>
-              navigation.navigate('RecoVideoPlayer', {
-                data: main,
-              })
-            }> */}
           <View
             style={{
               borderBottomColor: styles.lightGreyColor,
@@ -83,31 +77,16 @@ const MainView = ({
                 "오늘의 추천영상"
               </Text>
             </View>
-            {/* <FastImage
-                style={{width: contents.width, height: 240}}
-                resizeMode={'cover'}
-                source={{
-                  uri: main && main.thumbnail,
-                }}
-              /> */}
             <YoutubePlayer
               webViewStyle={{
                 flex: 1,
                 alignSelf: 'stretch',
               }}
               videoId={main && main.videoId}
-              // playList={videos.map((video) => video.videoId)}
-              // playListStartIndex={musicNumber}
               autoplay={false}
-              // onReady={() => setVideoLoading(false)}
-              // play={true}
               height={contents.width / 1.77}
               onChangeState={(e) => {
                 console.log(e);
-                if (e === 'ended') {
-                  null;
-                  // testHandle({musicNumber});
-                }
               }}
               initialPlayerParams={{
                 controls: true,

@@ -108,8 +108,6 @@ const Home = ({navigation}) => {
   } = useQuery(FAVORITE_VIDEO, {
     variables: {
       videoId: favoriteId.map((video) => video.videoId),
-      // pageNumber: 0,
-      // items: 50,
     },
     notifyOnNetworkStatusChange: true,
     skip: !shouldFetch,

@@ -4,8 +4,6 @@ import {ScrollView} from 'react-native-gesture-handler';
 import AlbumImageView from '../../../../components/AlbumImageView';
 import styles from '../../../../styles';
 import contents from '../../../../contents';
-import {useQuery} from 'react-apollo-hooks';
-import {SEE_SINGER_BOX} from '../../../Query';
 
 const AlbumMusic = ({navigation, favorite, loading, data}) => {
   const artistLength = data && data.seeSinger && data.seeSinger.length;
